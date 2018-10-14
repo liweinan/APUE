@@ -1,0 +1,21 @@
+APUE上的代码运行不出来，网上查说缺少静态库，要怎么整啊？
+[ 50%] Linking C executable APUE
+Undefined symbols for architecture x86_64:
+  "_err_sys", referenced from:
+      _main in main.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[3]: *** [APUE] Error 1
+make[2]: *** [CMakeFiles/APUE.dir/all] Error 2
+make[1]: *** [CMakeFiles/APUE.dir/rule] Error 2
+make: *** [APUE] Error 2
+
+/这是在Clion上编译报错/
+
+a.c:2:10: fatal error: fcnt1.h: No such file or directory
+ #include <fcnt1.h>
+          ^~~~~~~~~
+compilation terminated.
+
+
+/这是在虚拟机上的/
